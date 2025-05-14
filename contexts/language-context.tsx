@@ -75,6 +75,13 @@ const translations = {
     "footer.saturday": "Saturday",
     "footer.sunday": "Sunday",
     "footer.closed": "Closed",
+
+    // Not Found Page
+    "notFound.title": "Page Not Found",
+    "notFound.description": "Sorry, we couldn't find the page you're looking for.",
+    "notFound.backHome": "Back to Home",
+    "notFound.suggestion": "You might want to check our services or book an appointment instead.",
+    "notFound.errorCode": "Error 404",
   },
   fr: {
     // Navigation
@@ -141,6 +148,13 @@ const translations = {
     "footer.saturday": "Samedi",
     "footer.sunday": "Dimanche",
     "footer.closed": "Fermé",
+
+    // Not Found Page
+    "notFound.title": "Page Non Trouvée",
+    "notFound.description": "Désolé, nous n'avons pas pu trouver la page que vous recherchez.",
+    "notFound.backHome": "Retour à l'Accueil",
+    "notFound.suggestion": "Vous pourriez consulter nos services ou prendre rendez-vous à la place.",
+    "notFound.errorCode": "Erreur 404",
   },
   ar: {
     // Navigation
@@ -203,6 +217,13 @@ const translations = {
     "footer.saturday": "السبت",
     "footer.sunday": "الأحد",
     "footer.closed": "مغلق",
+
+    // Not Found Page
+    "notFound.title": "الصفحة غير موجودة",
+    "notFound.description": "عذراً، لم نتمكن من العثور على الصفحة التي تبحث عنها.",
+    "notFound.backHome": "العودة إلى الصفحة الرئيسية",
+    "notFound.suggestion": "قد ترغب في التحقق من خدماتنا أو حجز موعد بدلاً من ذلك.",
+    "notFound.errorCode": "خطأ 404",
   },
 }
 
