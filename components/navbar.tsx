@@ -5,11 +5,13 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import { useRouter } from "next/navigation"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { translations, dir } = useLanguage()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +50,12 @@ export default function Navbar() {
           <a href="#testimonials" className=" hover:text-amber-600 transition-colors">
             {translations["nav.testimonials"]}
           </a>
-          <Button className="bg-amber-600 hover:bg-amber-700">{translations["nav.bookNow"]}</Button>
+          <Button 
+            className="bg-amber-600 hover:bg-amber-700"
+            onClick={() => router.push('#booking')}
+            >
+            {translations["nav.bookNow"]}
+            </Button>
           <LanguageSwitcher />
         </div>
 
