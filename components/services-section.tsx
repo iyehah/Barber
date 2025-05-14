@@ -52,7 +52,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-all duration-300 border-none opacity-0 animate-fadeInUp"
+              className="hover:shadow-lg transition-all duration-300 border opacity-0 animate-fadeInUp"
               style={{ animationDelay: `${index * 100 + 400}ms` }}
             >
               <CardHeader className="pb-2">
