@@ -4,10 +4,12 @@ import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Scissors } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { useRouter } from "next/navigation"
 
 export default function HeroSection() {
   const heroRef = useRef(null)
   const { translations, dir } = useLanguage()
+  const router = useRouter()
 
   return (
     <section
@@ -34,10 +36,17 @@ export default function HeroSection() {
             {translations["hero.subtitle"]}
           </p>
             <div className="hero-animate flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 opacity-0 animate-fadeIn animation-delay-400">
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg">
+            <Button 
+                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg"
+                onClick={() => router.push('#booking')}
+                >
               {translations["hero.bookButton"]}
             </Button>
-            <Button variant="outline" className="text-foreground border-none hover:bg-amber-700 hover:text-white px-8 py-6 text-lg">
+            <Button 
+                variant="outline" 
+                className="text-foreground border-none hover:bg-amber-700 hover:text-white px-8 py-6 text-lg"
+                onClick={() => router.push('#services')}
+                >
               {translations["hero.servicesButton"]}
             </Button>
             </div>
